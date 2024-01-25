@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@800&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Fruktur&family=Nunito:wght@800&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -13,58 +13,80 @@
 header {
   margin-top: 40px;
   width: 100%;
-  height: Auto;
+  height: auto;
   background-color: cornflowerblue;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
 }
 
 header .Logo {
   width: 120px;
-  margin-top: 3px;
-  margin-left: 8px;
 }
-
 header ul {
-    text-align: middle;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
 }
 
 header li {
-  font-size: 20px;
-  margin-left: 1%;
-  line-height: 10px;
-  margin-bottom: 60px;
-  display: inline-block;
-  text-align: center ;
-  
+  font-size: 16px;
+  margin: 4px;
 }
-body{
+
+body {
   background-color: gray;
 }
+
 h1 {
   text-align: center;
   font-size: small;
-  display: table-cell;
 }
-table {
-  border-collapse: separate;
-  text-indent: initial;
-  border-spacing: 2px;
-}
+
 .container {
-   display: block;
-   width: 63%;
-   height: 50%;
-   margin: left;
-   padding-top: 4rem;
-   padding-left: 1rem;
-   padding-bottom: 1rem;
+  width: 100%;
+  padding: 1rem;
 }
+
 .container2 {
-  display: block;
-  width: 70%;
-  height: 50%;  
-  padding-left: 1rem;
-  position: bottom;
+  width: 100%;
+  padding: 1rem;
 }
-img{
-  padding-left: 3rem;
+
+.Bob {
+  padding-left: 3%;
+}
+
+ul {
+  padding-bottom: 20px;
+  margin-bottom: 10px;
+  color: aliceblue;
+}
+
+#Balls2 > li {
+  list-style-type: disc;
+}
+
+.foot {
+  width: 100%;
+  height: auto;
+  background-color: cornflowerblue;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+  header ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  header li {
+    margin: 10px 0;
+  }
 }
